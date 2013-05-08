@@ -1,9 +1,12 @@
-#include <stdio.h>
+// Test.cpp : コンソール アプリケーションのエントリ ポイントを定義します。
+//
+
+#include "stdafx.h"
 
 class InterfaceA
 {
 public:
-  int var_a;
+	int var_a;
 	virtual void foo0() = 0;
 };
 
@@ -28,7 +31,7 @@ public:
 	}
 };
 
-int main(int argc, char* argv[] )
+int _tmain(int argc, _TCHAR* argv[])
 {
 	Implement* pImp = new Implement();
 	InterfaceA* pIa = (InterfaceA*)(pImp);
